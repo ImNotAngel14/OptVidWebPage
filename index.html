@@ -12,40 +12,37 @@
     <body>
       <div class="container-fluid px-0" id="cuerpo">
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="row navbar navbar-expand-lg ">
           <div class="container-fluid">
-            <a class="navbar-brand col-2" href="#">
-              <img src="_images/nav/empresa.png" width="96" height="54" alt="">
-            </a>
-    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto col-5">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Galeria</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Noticias</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nosotros</a>
-                </li>
-              </ul>
+            <div class="col-2">
+              <a class="navbar-brand" href="index.html">
+                <img src="_images/nav/empresa3.png" width="96" height="54" alt="">
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="container-fluid justify-content-around collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="">
+                  <a href=""><button class="btn btn-outline-danger">Inicio</button></a>
+                  <a href="#Game"><button class="btn btn-outline-danger">Juego</button></a>
+                  <a href="#Galery"><button class="btn btn-outline-danger">Galeria</button></a>
+                  <a href="#Footer"><button class="btn btn-outline-danger">Nosotros</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 ">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
           </div>
         </nav>
         <!--Backgroung image header-->
-        <div class="">
-          <header>
-            <div class="bg-image">
+        <div class="row">
+          <div class="">
+            <div class="bg-image col-12">
+
             </div>
-          </header>
+          </div>
           <div class="row d-flex">
             <img class="col-4" src="images/frames/tile.png" alt="">
             <img class="col-4" src="images/frames/tile.png" alt="">
@@ -61,70 +58,105 @@
         <br>
         <div class="row mx-5" id="Game">
           <h1 class="d-flex justify-content-center">Descripción</h1>
-          <div class="row mx-5 justify-content-around" id="Description">
+          <div class="d-flex col-12 p-2" id="Description">
             
-            <div class="col-4">
+            <div class="d-flex col-6 my-5">
               <br>
               <br>
-              <div class="card mb-3" style="font-family:'Courier New', Courier, monospace; color: #ff65c3; background-color: #0cf0d9;">
-                <div class="card-body">
+              <div id="Game_Description" class="text-center mb-3">
+                <div class="my-5">
                   <b>¡Adentrate en el fantastico mundo de 
                     <i>Dream Frapped!</i> Descubre los misterios que aguardan en este dulce paraíso de fantasía. 
                     ¡Explora cada pedazo del mapa, resuelve acertijos y escapa de los enemigos que acechan los rosados prados de caramelo!.</b>
                   
                 </div>
-                <!--
-                <p>¡Adentrate en el fantastico mundo de Dream Frapped! Descubre los misterios que aguardan en este dulce paraíso de fantasía. ¡Explora cada pedazo del mapa, resuelve acertijos y escapa de los enemigos que acechan los rosados prados de caramelo!. </p>
-                -->
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 my-auto">
               <div>
-                <img src="_images/body/Protagonista.jpg" alt="Protagonista" width="480" height="320">
+                <img class="img-fluid" src="_images/body/mainCharacter.png" alt="Protagonista">
               </div>
             </div>
           </div>
           <div class="py-5" id="Galery">
             
             <section>
-              <h1 class="d-flex justify-content-center">Galeria</h1>
-              <div class="card-group">
-                <div class="card">
-                  <img class="card-img-top" src="_images/game/MainCharacter.jpg" alt="Card image cap" width="291" height="200">
-                  <div class="card-body">
-                    <h5 class="card-title">Personaje principal</h5>
-                    <p class="card-text">Modelado del personaje principal del videojuego.</p>
+              <h1 class="">Galeria</h1>
+              <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="_images/game/MainCharacter.jpg" class="card-img-top" alt="..." width="200" height="200">
+                      <div class="card-body">
+                        <h5 class="card-title">Personaje principal</h5>
+                        <p class="card-text">Modelo del personaje principal (aun sin nombre), ¡terminado! ¡Que emocionante es trabajar en este juego!</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Subido el 29 Noviembre 2022</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="_images/game/Enemy1.jpg" class="card-img-top" alt="..." width="200" height="200">
+                      <div class="card-body">
+                        <h5 class="card-title">Sweetsy sweetsy araña...</h5>
+                        <p class="card-text">Tal vez las arañas darian menos miedo si fueran todas de dulce, ¿¡no!?</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Subido el 20 Diciembre 2022</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="_images/game/Frog.jpg" class="card-img-top" alt="..." width="200" height="200">
+                      <div class="card-body">
+                        <h5 class="card-title">¡RIBBIT!</h5>
+                        <p class="card-text">¡Que dulce animalito! ¿Entendiste? ¡Dulce! (No me pagan lo suficiente para esto).</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Subido el 9 Febrero 2023</small>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="_images/game/Enemy1.jpg" alt="Card image cap" width="291" height="200">
-                  <div class="card-body">
-                    <h5 class="card-title">My enemy</h5>
-                    <p class="card-text">Desarrollo de los enemigos dentro del juego.</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="_images/game/Frog.jpg" alt="Card image cap" width="291" height="200">
-                  <div class="card-body">
-                    <h5 class="card-title">Ribit</h5>
-                    <p class="card-text">Frog.</p>
-                  </div>
-                </div>
-              </div>  
             </section>
           </div>
-          
         </div>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="index.js"></script>
         <footer class="pt-5">
-          <div id="Footer">
-            <h1 class="d-flex justify-content-center">Acerca de nosotros</h1>
-            <br>
-            <br>
-            Derechos no reservados Herathia.
+          <div id="Footer" class="container-fluid">
+            <div class="">
+              <h1 class="row justify-content-center">Acerca de nosotros</h1>
+              <img src="_images/nav/empresa3.png" alt="Herathia">
+              <div class="row justify-content-center">
+                <p class="col-sm-12 col-md-6 justify-content-center mb-5" style="color:black">
+                  En 
+                  <b>Herathia</b>
+                   somos un grupo de estudiantes que busca desarrollar videojuegos que puedan hacer tan feliz a las nuevas generaciones como los videojuegos lo han hecho para nosotros en nuestra infancia.
+                </p>
+                
+              </div>
+            
+            </div>
           </div>
+            <div class="bg-dark">
+              <div class="row justify-content-center">
+                <nav class="col-sm-4 col-md-2 col-xl-2 d-flex justify-content-around">
+                  <a href=""><img src="_images/footer/EpicGamesStore.png" alt="Epic Games Store" style="width: auto; max-height: 120px;"></a>
+                  <a href=""><img src="_images/footer/UnrealEngine.png" alt="Unreal Engine" style="width: auto; max-height: 120px;"></a>
+                </nav>
+              </div>
+            </div>
+            <br>
+            <br>
+            <p style="color:white">
+              Epic Games Store and Unreal Engine are either registered trademarks or trademarks of Epic Games.
+            </p>
+            <br>
         </footer>
       </div>
     </body>
