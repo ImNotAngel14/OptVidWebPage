@@ -43,3 +43,9 @@ p
 {
     background-color: aqua;
 }
+
+.card-img-top
+{
+    width: auto;
+    max-height: 400px;
+}
